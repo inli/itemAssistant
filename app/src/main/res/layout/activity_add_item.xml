@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".add_item"
+    android:padding="20dp">
+    <!--phone number-->
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="项目名称："
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/itemName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint=""
+            android:inputType="text"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/background_dark"
+            android:text="开始时间："
+
+            />
+        <EditText
+            android:id="@+id/itemStartTime"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint=""
+            android:inputType="date"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="结束时间："
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/itemEndTime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint=""
+            android:inputType="date"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="参与人数："
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/perCnt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint=""
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/addItem"
+        android:layout_margin="15dp"
+        android:layout_width="fill_parent"
+        android:background="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:text="添   加"
+        android:layout_height="40dp"
+
+        />
+
+</LinearLayout>
+
